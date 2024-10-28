@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Cuádruplos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container my-5">
+    <h2 class="text-center">Generador de Cuadruplos</h2>
+    <div class="mb-3">
+        <label for="expresion" class="form-label">Expresión ((4+2)*(3-1)/2)</label>
+        <input type="text" id="expresion" class="form-control" placeholder="Ingrese la expresión">
+    </div>
+    <button id="generarCuadruplos" class="btn btn-primary">Generar Cuadruplos</button>
+    
+    <div id="resultados" class="mt-4">
+        <h4>Resultados de Cuadruplos</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Operando 1</th>
+                    <th>Operando 2</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuadruplos">
+            </tbody>
+        </table>
+        <div id="resultadoFinal" class="alert alert-success mt-3" role="alert"></div>
+    </div>
+</div>
+
+<script src="cuadruplo.js"></script>
+</body>
+</html>
